@@ -21,22 +21,7 @@ module LCD_test(clk_i,cam_b,camera_e,rs_o,wr_o,reset_o,rd_o,data_o,rstsw_i);
 
 	wire clk_i,rstsw_i;
 
-	/*IBUFG IBUFG_clk_0   (.I(clk),       .O(clk_i));
-	IBUF  IBUF_rstsw_0  (.I(rstsw),     .O(rstsw_i));
-	OBUF  OBUF_rs_0     (.I(rs_o),      .O(rs));
-	OBUF  OBUF_cs_0     (.I(cs_o),      .O(cs));
-	OBUF  OBUF_wr_0     (.I(wr_o),      .O(wr));
-	OBUF  OBUF_reset_0  (.I(reset_o),   .O(reset));
-	OBUF  OBUF_rd_0     (.I(rd_o),      .O(rd));
-	OBUF  OBUF_data_0   (.I(data_o[0]), .O(data[0]));
-	OBUF  OBUF_data_1   (.I(data_o[1]), .O(data[1]));
-	OBUF  OBUF_data_2   (.I(data_o[2]), .O(data[2]));
-	OBUF  OBUF_data_3   (.I(data_o[3]), .O(data[3]));
-	OBUF  OBUF_data_4   (.I(data_o[4]), .O(data[4]));
-	OBUF  OBUF_data_5   (.I(data_o[5]), .O(data[5]));
-	OBUF  OBUF_data_6   (.I(data_o[6]), .O(data[6]));
-	OBUF  OBUF_data_7   (.I(data_o[7]), .O(data[7]));
-*/
+
 //lcd基準クロック10MHz作成
 	always @(posedge clk_i or posedge !rstsw_i)
 	begin
