@@ -197,7 +197,7 @@ module sccb(clk_i,rstsw_i,SDA,SCL);
 					end
 				17'h00007	: begin
 						adrs  <= 8'h14;
-						data  <= 8'h08;
+						data  <= 8'h６8;
 					end
 				17'h00008	: begin
 						adrs  <= 8'haa;
